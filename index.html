@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn Tailwind css</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="columns-lg justify-center mx-auto mt-5">
+        <form action="">
+          <h1 class="text-center bg-orange-900 text-white">BMI Calculator</h1>
+
+          <div>
+            <label for="weightInput">Weight (kg): </label>
+            <input
+              type="text"
+              name=""
+              id="weightInput"
+              class="form-input px-1 py-1 mt-3 place-content-center rounded-md"
+            />
+          </div>
+          <div>
+            <label for="heightInput">Height (cm): </label>
+            <input
+              type="text"
+              name=""
+              id="heightInput"
+              class="form-input px-1 py-1 mt-3 place-content-center rounded-md"
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="calculateBtn"
+            class="rounded-full bg-black px-3 py-1 mt-4 text-center text-white border-solid"
+          >
+            Calculate
+          </button>
+        </form>
+      </div>
+      <div class="columns-lg justify-center mx-auto mt-5">
+        <span id="showResult"></span>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+    <!-- মডিউল ১২ এর অ্যাসাইনমেন্ট
+
+Build a BMI Calculator using JavaScript and deploy it to Netlify
+Part 1: Building the BMI Calculator
+
+Create an HTML file with a form containing two input fields with IDs of "weightInput" and "heightInput", and a button with an ID of "calculateBtn".
+
+Using JavaScript, write a function that calculates the Body Mass Index (BMI) of a person when the "calculateBtn" is clicked.
+The BMI formula is: BMI = weight (kg) / (height (m) * height (m)).
+Display the BMI result on the web page.
+Part 2: Styling the BMI Calculator 
+
+Use CSS to style the form and the result.
+Add a background image to the form.
+Add custom fonts using Google Fonts.
+Part 3: Deploying to Netlify
+Deploy your site to Netlify.
+What You should submit :
+1.  You should submit github repository link
+2. You should add a text file named note.txt in your repository
+3. In the note.txt file, please add your deployed link of your website
+ -->
+  </body>
+</html>
